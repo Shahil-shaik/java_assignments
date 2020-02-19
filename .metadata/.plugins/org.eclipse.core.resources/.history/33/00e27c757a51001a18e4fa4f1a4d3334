@@ -1,0 +1,11 @@
+import java.math.BigInteger;
+import java.util.HashMap;
+
+public class temp {
+	public static void main(String args[]) {
+		HashMap<Integer , String> table = new HashMap<int,String>();
+		table.put(1, "hey");
+		System.out.print(table.get(1));
+	}
+	
+}

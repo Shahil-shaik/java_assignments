@@ -1,0 +1,18 @@
+package com.capgemini.otms.service;
+import java.util.regex.Pattern;
+
+public class loginService {
+	
+	private static final String passwordRegex =
+			"^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,16}$";
+
+	private static final Pattern passwordPattern = Pattern.compile(passwordRegex);
+	
+	public long loginServiceMethod(long userId,String userPassword) {
+		if(userId<0)
+			//throw invalid userId exception
+		if (passwordPattern.matcher(userPassword).matches())
+			//throw inalid password exception
+		
+	}
+}

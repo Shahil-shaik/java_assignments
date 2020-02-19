@@ -1,0 +1,19 @@
+package policethief;
+
+import java.util.Scanner;
+
+public class holidaySeason {
+	public static void main(String args) {
+		Scanner input=new Scanner(System.in);
+		String pattern=input.next();
+		int n=pattern.length();
+		int count=0;
+		for(int a=0;a<n-3;a++)
+			for(int b=a+1;b<n-2;b++)
+				for(int c=b+1;c<n-1;c++)
+					for(int d=c+1;d<n;d++)
+						if(pattern.charAt(a)==pattern.charAt(c) && pattern.charAt(b)==pattern.charAt(d))
+							count++;
+		System.out.println(count);
+	}
+}

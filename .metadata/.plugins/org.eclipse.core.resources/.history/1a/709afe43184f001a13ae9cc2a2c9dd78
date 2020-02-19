@@ -1,0 +1,21 @@
+package com.capgemini.otms.util;
+import com.capgemini.otms.dto.*;
+import java.math.BigInteger;
+import java.util.*;
+
+class userRepository {
+	static Map<Long, BigInteger> table = new HashMap<Long, BigInteger>();
+
+	public Map<Long, BigInteger> gettable() {
+	        return table;
+	}
+
+	public void setTable(Map<Long, BigInteger> table) 
+	{
+	        this.table = table;
+	}
+	public void putData(user ob,test obj)
+	{
+	table.put(ob.getUserId(),obj.getTestId());        
+	}
+}

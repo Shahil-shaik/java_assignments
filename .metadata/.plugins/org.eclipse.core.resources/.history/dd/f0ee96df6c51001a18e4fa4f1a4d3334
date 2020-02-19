@@ -1,0 +1,11 @@
+package com.capgemini.online_test.services;
+import com.capgemini.online_test.dao.*;
+import com.capgemini.online_test.dto.User;
+import com.capgemini.online_test.util.*;
+
+public class loginService {
+	public static long checkLogin(long userId,String password) {
+		User obj = getUser.getUserObject(userId);
+		if(obj.userPassword)
+	}
+}

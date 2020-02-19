@@ -1,0 +1,5 @@
+package com.capgemini.otms.dto;
+
+public class user {
+
+}

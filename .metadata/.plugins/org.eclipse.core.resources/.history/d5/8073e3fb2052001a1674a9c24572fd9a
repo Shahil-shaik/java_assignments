@@ -1,0 +1,47 @@
+package com.capgemini.online_test.services;
+
+import java.util.Scanner;
+
+import com.capgemini.online_test.dao.AccessUserIdRepo;
+import com.capgemini.online_test.dto.Test;
+import com.capgemini.online_test.exception.MyException;
+
+public class RegisterService {
+	private String userName,userPassword;
+	private long userId;
+	private Test userTest;
+	private Boolean isAdmin;
+	long getUserId() {
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter userId :")
+		long temp=input.nextLong();
+		try {
+			if(AccessUserIdRepo.getUserObject(temp) == null)
+				throw new MyException("userId already taken.type another one");
+		}
+		catch (MyException exp){
+			System.out.println(exp.getMessage());
+			getUserId();
+		}
+		return temp;
+	}
+private String getUserPassword() {
+	Scanner input=new Scanner(System.in);
+	String temp=input.next();
+	try {
+		
+	}
+	catch (MyException exp){
+		System.out.println(exp.getMessage());
+		getUserPassword();
+	}
+	}
+	public  void register() {
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter Username :");
+		this.userName=input.next();
+		this.userId=getUserId();
+		this.userPassword=getUserPassword();
+	}
+	
+}

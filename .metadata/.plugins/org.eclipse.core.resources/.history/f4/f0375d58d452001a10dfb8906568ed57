@@ -1,0 +1,78 @@
+package com.capgemini.online_test.serviceTest;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+
+import java.math.BigInteger;
+
+import org.junit.Test;
+
+import com.capgemini.online_test.dao.AccessTestRepo;
+import com.capgemini.online_test.dao.AccessUserIdRepo;
+import com.capgemini.online_test.dao.AccessUserRepo;
+import com.capgemini.online_test.dto.User;
+import com.capgemini.online_test.dto.test;
+import com.capgemini.online_test.exception.MyException;
+import com.capgemini.online_test.services.AssignTestService;
+import com.capgemini.online_test.services.LoginService;
+
+public class ServiceTest {
+	@Test
+	public void LoginServiceTest1() {
+		User obj = new User("shahil",11615915,false,null,"Abc-123");
+		assertEquals(11615915,LoginService.checkLogin(11615915, "Abc-123"));
+		}
+	
+	@Test
+	public void LoginServiceTest3() {
+		Throwable Exp =assertThrows(
+				MyException.class,()->{
+					User obj = new User("shahil",11615915,false,null,"Abc-123");
+					LoginService.checkLogin((long)11615915,"Abc-12345");
+				}
+				);
+		assertEquals("Incorrect UserId / password",Exp.getMessage());
+		}
+	@Test()
+	public void LoginServiceTest2() {
+		Throwable Exp = assertThrows(
+				MyException.class,()->{
+					User obj = new User("shahil",11615915,false,null,"Abc-123");
+					LoginService.checkLogin(1161591665L,"Abc-123");
+				}
+				);
+		assertEquals("User doesn't exist/wrong userId",Exp.getMessage());
+		}
+	@Test
+	public void AssignTestServiceTest1() {
+		User obj = new User();
+		obj.setIsAdmin(false);
+		obj.setUserId(11615915);
+		obj.setUserName("satish"); 
+		obj.setUserPassword("Abc-123");
+		AccessUserIdRepo.putUserObject(obj);
+		test obj1 = new test();
+		BigInteger testId=new BigInteger("123456");
+		obj1.setTestId(testId);
+		AccessTestRepo.putTestObject(obj1);
+		AssignTestService.assignTest((long) 11615915, testId);
+		assertEquals(testId,AccessUserRepo.getTestId(11615915));
+	}
+	@Test
+	public void AssignTestServiceTest2() {
+		User obj = new User();
+		obj.setIsAdmin(false);
+		obj.setUserId(11615915);
+		obj.setUserName("satish"); 
+		obj.setUserPassword("Abc-123");
+		AccessUserIdRepo.putUserObject(obj);
+		test obj1 = new test();
+		BigInteger testId=new BigInteger("123456");
+		obj1.setTestId(testId);
+		AccessTestRepo.putTestObject(obj1);
+		AssignTestService.assignTest((long) 11615915, testId);
+		assertNotEquals(new BigInteger("12223"),AccessUserRepo.getTestId(11615915));
+	}
+}

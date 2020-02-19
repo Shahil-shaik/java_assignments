@@ -1,0 +1,20 @@
+package com.capgemini.online_test.UI;
+
+import com.capgemini.online_test.dto.User;
+import com.capgemini.online_test.services.loginService;
+import com.capgemini.online_test.util.Userid_Rep;
+
+public class main {
+	public static void main(String args[]) {
+		User obj=new User();
+		obj.setUserName("shahil");
+		obj.setIsAdmin(false);
+		obj.setUserId(11615915);
+		obj.setUserPassword("Abc-123");
+		obj.setUserTest(null);
+		Userid_Rep obj1 = new Userid_Rep();
+		obj1.putData(obj);
+		loginService obj2 = new loginService();
+		System.out.println(obj2.checkLogin());
+	}
+}

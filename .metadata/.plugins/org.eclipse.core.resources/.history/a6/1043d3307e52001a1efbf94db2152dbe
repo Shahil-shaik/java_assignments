@@ -1,0 +1,11 @@
+package com.capgemini.online_test.dao;
+
+import java.math.BigInteger;
+
+import com.capgemini.online_test.util.User_Rep;
+
+public class AccessUserRepo {
+	public static void putData(Long userId,BigInteger testId) {
+		User_Rep.putData(userId,testId);
+	}
+}

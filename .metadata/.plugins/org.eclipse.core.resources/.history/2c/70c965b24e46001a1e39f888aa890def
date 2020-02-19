@@ -1,0 +1,12 @@
+package general;
+
+import java.util.Scanner;
+
+public class passwordStrength {
+	public static void main(String args[]) {
+		Scanner input=new Scanner(System.in);
+		String password=input.next();
+		passwowrdStrengthCalculator object=new passwowrdStrengthCalculator();
+		System.out.print(object.calculator(password));
+	}
+}

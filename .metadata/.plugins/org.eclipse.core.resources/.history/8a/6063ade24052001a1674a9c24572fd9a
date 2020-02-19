@@ -1,0 +1,24 @@
+package com.capgemini.online_test.daoTest;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import com.capgemini.online_test.dao.AccessUserIdRepo;
+import com.capgemini.online_test.dto.User;
+
+public class DaoTest {
+	@Test
+	public void AcessTestRepoTest1() {
+		
+	}
+	public void AccessUserrepoTest1() {
+		
+	}
+	public void AcessUserIdRepo_getUserObjectTest1() {
+		User obj = new User("shahil",11615915,false,null,"Abc123");
+		assertEquals(AccessUserIdRepo.getUserObject(11615915),obj);
+	}
+	
+	
+}

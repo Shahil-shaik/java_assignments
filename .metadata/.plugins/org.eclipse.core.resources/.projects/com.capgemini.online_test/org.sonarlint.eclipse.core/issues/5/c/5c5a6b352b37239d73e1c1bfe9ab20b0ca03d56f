@@ -1,0 +1,21 @@
+
+S	java:S108")Either remove or fill this block of code.(˜£­HÓRMAJORZ
+CODE_SMELL
+]
+java:S1481!",Remove this unused "userId1" local variable.(áý«ÒûÿÿÿÿH×RMINORZ
+CODE_SMELL
+d	java:S106 "9Replace this use of System.out or System.err by a logger.(·âÚ½HÕRMAJORZ
+CODE_SMELL
+Y
+java:S1481#".Remove this unused "password1" local variable.(¥é·KHØRMINORZ
+CODE_SMELL
+i	java:S106""9Replace this use of System.out or System.err by a logger.(àº¿ÃøÿÿÿÿHÖRMAJORZ
+CODE_SMELL
+h
+java:S1854#"=Remove this useless assignment to local variable "password1".(¥é·KHÒRMAJORZ
+CODE_SMELL
+l
+java:S1854!";Remove this useless assignment to local variable "userId1".(áý«ÒûÿÿÿÿHÑRMAJORZ
+CODE_SMELL
+i	java:S106"9Replace this use of System.out or System.err by a logger.(×ëÊ—ûÿÿÿÿHÔRMAJORZ
+CODE_SMELL

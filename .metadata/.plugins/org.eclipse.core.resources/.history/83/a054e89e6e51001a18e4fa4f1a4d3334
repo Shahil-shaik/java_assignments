@@ -1,0 +1,10 @@
+package com.capgemini.online_test.dao;
+import com.capgemini.online_test.util.*;
+import com.capgemini.online_test.dto.*;
+
+public class getUser {
+	static public User getUserObject(long userId) {
+		User obj=
+		return obj;
+	}
+}

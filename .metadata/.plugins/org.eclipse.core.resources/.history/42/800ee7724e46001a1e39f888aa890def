@@ -1,0 +1,18 @@
+package general;
+
+public class passwowrdStrengthCalculator {
+	int calculator(String password) {
+		int uc=0,lc=0,s=0,n=0;
+		for(int index=0;index<password.length();index++) {
+			if((int)password[index]>=33 && (int)password[index]<=47)
+				s=1;
+			if((int)password[index]>=48 && (int)password[index]<=57)
+				n=1;
+			if((int)password[index]>=65 && (int)password[index]<=90)
+				uc=1;
+			if((int)password[index]>=97 && (int)password[index]<=122)
+				lc=1;
+		}
+		return s+n+uc+lc;
+	}
+}

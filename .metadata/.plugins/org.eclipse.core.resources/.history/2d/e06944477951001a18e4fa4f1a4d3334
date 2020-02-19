@@ -1,0 +1,23 @@
+package com.capgemini.online_test.services;
+import com.capgemini.online_test.dao.*;
+import com.capgemini.online_test.dto.User;
+import com.capgemini.online_test.util.*;
+import com.capgemini.online_test.exception.*;
+public class loginService {
+	public static long checkLogin(long userId,String password) {
+		User obj = getUser.getUserObject(userId);
+		
+		try {
+			if(password.equals(obj.getUserPassword())) {
+				return userId;
+		}
+			else {
+				throw new MyException("Incorrect password");
+			}
+	}
+		catch (MyException exp) {
+			System.out.println(exp);
+		}
+		return 0;
+}
+}

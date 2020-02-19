@@ -1,0 +1,16 @@
+package com.capgemini.online_test.dao;
+import com.capgemini.online_test.util.*;
+import java.util.HashMap;
+
+import com.capgemini.online_test.dto.*;
+
+public class AcessUserIdRepo {
+	
+	public static User getUserObject(long userId) {
+	  HashMap<Long,User> map=Userid_Rep.gettable();
+	  return map.get(userId);
+	}
+	public static void putUserObject(User obj) {
+		Userid_Rep.putData(obj);
+	}
+}

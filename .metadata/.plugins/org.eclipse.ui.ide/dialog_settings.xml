@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\Eduk\shaik shahil\java_assignments\com.capgemini.online_test"/>
+			<item value="E:\Eduk\shaik shahil\java_assignments\Sprint1_team-master"/>
+			<item value="E:\Eduk\shaik shahil\java_assignments\templab"/>
+			<item value="E:\Eduk\lab5"/>
+			<item value="E:\Eduk\lab4"/>
+			<item value="E:\Eduk\Lab3"/>
+			<item value="E:\Eduk\Lab2"/>
+			<item value="E:\Eduk\lab1"/>
+			<item value="E:\Eduk\shaik shahil\java_assignments\lab_1"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,5 @@
+package com.capgemini.otms.dao;
+
+public class userData {
+
+}

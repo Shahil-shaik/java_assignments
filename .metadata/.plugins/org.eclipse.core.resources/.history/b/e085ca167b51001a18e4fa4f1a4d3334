@@ -1,0 +1,32 @@
+package com.capgemini.online_test.services;
+import com.capgemini.online_test.dao.*;
+import java.util.Scanner;
+import com.capgemini.online_test.dto.User;
+import com.capgemini.online_test.util.*;
+import com.capgemini.online_test.exception.*;
+public class loginService {
+	public static long checkLogin() {
+		long userId;
+		String password;
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter UserId :");
+		userId=input.nextLong();
+		System.out.println("Enter Password :");
+		password=input.next();
+		User obj = getUser.getUserObject(userId);
+		
+		try {
+			if(password.equals(obj.getUserPassword())) {
+				return userId;
+		}
+			else {
+				throw new MyException("Incorrect UserId / password");
+			}
+	}
+		catch (MyException exp) {
+			System.out.println(exp);
+			checkLogin();
+		}
+		return 1;
+}
+}

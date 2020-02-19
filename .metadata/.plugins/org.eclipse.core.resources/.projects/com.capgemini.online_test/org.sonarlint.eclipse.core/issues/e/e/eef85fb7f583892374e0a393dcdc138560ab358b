@@ -1,0 +1,18 @@
+
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¯éÀúÿÿÿÿHåRMINORZ
+CODE_SMELL
+k
+java:S1128"?Remove this unused import 'com.capgemini.online_test.dto.test'.(³òºåHæRMINORZ
+CODE_SMELL
+u
+java:S1128"DRemove this unused import 'com.capgemini.online_test.util.Test_Rep'.(ÙÏ’ùûÿÿÿÿHçRMINORZ
+CODE_SMELL
+_
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿHèRMINORZ
+CODE_SMELL
+k
+java:S1118":Add a private constructor to hide the implicit public one.(À´¶”ÿÿÿÿÿHéRMAJORZ
+CODE_SMELL
+P
+java:S2129"$Remove this "BigInteger" constructor(³ğ¹ÑHêRMAJORZ
+CODE_SMELL

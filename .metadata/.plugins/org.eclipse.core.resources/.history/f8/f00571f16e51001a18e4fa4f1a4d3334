@@ -1,0 +1,11 @@
+package com.capgemini.online_test.dao;
+import com.capgemini.online_test.util.*;
+import com.capgemini.online_test.dto.*;
+
+public class getUser {
+	public User getUserObject(long userId) {
+	  HashMap<Long,User> table1=Userid_Rep.gettable();
+	  User obj=
+		return obj;
+	}
+}

@@ -1,0 +1,13 @@
+package com.capgemini.online_test.dao;
+
+import java.math.BigInteger;
+import java.util.HashMap;
+import com.capgemini.online_test.dto.Test;
+import com.capgemini.online_test.util.Test_Rep;
+
+public class AccessTestRepo {
+	public static Test getTestObject(BigInteger testId) {
+		HashMap<BigInteger,Test> map=Test_Rep.gettable();
+		return map.get(testId);
+	}
+}

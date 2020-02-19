@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dao.getUser"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dto.Test"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dao.getTest"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.util.Test_Rep"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.services.loginService"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.util.User_Rep"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.services.LoginService"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dto.User"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dao.AccessUserIdRepo"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dto.test"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dao.AccessTestRepo"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.dao.AccessUserRepo"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.services.AssignTestService"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.api.Assertions"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.exception.MyException"/>
+<fullyQualifiedTypeName name="com.capgemini.online_test.util.Userid_Rep"/>
+</qualifiedTypeNameHistroy>
